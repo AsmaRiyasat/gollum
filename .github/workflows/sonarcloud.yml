@@ -1,0 +1,31 @@
+name: SonarCloud
+on:
+  push:
+    branches: [ "master", "main" ]
+  pull_request:
+
+jobs:
+  sonarcloud:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@v3
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          args: >
+            -Dsonar.organization=asmariyasat
+            -Dsonar.projectKey=asmariyasat_gollum
+            -Dsonar.sources=.
+            -Dsonar.sourceEncoding=UTF-8
