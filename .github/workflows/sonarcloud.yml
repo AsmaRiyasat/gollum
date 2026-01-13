@@ -27,8 +27,8 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-            -Dsonar.organization=asmariyasat
-            -Dsonar.projectKey=asmariyasat_gollum
+            -Dsonar.organization=AsmaRiyasat
+            -Dsonar.projectKey=asmariyasat
             -Dsonar.sources=.
             -Dsonar.sourceEncoding=UTF-8
             -Dsonar.branch.main=master
