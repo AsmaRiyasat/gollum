@@ -31,4 +31,4 @@ jobs:
             -Dsonar.projectKey=asmariyasat_gollum
             -Dsonar.sources=.
             -Dsonar.sourceEncoding=UTF-8
-            -Dsonar.branch.name=master
+            -Dsonar.branch.main=master
