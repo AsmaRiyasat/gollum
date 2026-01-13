@@ -28,7 +28,7 @@ jobs:
         with:
           args: >
               -Dsonar.organization=asmariyasat
-              -Dsonar.projectKey=asmariyasat_gollum
+              -Dsonar.projectKey=AsmaRiyasat_gollum
               -Dsonar.sources=.
               -Dsonar.sourceEncoding=UTF-8
 
