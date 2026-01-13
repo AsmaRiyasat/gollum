@@ -29,6 +29,8 @@ jobs:
           args: >
               -Dsonar.organization=asmariyasat
               -Dsonar.projectKey=AsmaRiyasat_gollum
-              -Dsonar.sources=.
+              -Dsonar.sources=lib
               -Dsonar.sourceEncoding=UTF-8
+              -Dsonar.exclusions=**/*.java
+
 
